@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/images-removebg-preview.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka+One&amp;family=Lora:wght@400;700&amp;family=Montserrat:wght@400;500;600;700&amp;family=Nunito:wght@400;700&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="assets/fonts/fontawesome/fontawesome.css">
+    <link rel="stylesheet" href="assets/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/libs/aos/dist/aos.css">
+
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="assets/css/theme.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.9/angular.min.js"
+        integrity="sha512-CjpXuCK2f47gfxIjQvOwKRVGj01yHWI5qdMTO0qzERireNL30uf+fXLeZ5OxKGDj7r8xpRK4XVxgqXhBbW8Tbg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-route/1.7.9/angular-route.min.js"
+        integrity="sha512-xI+5CA/dWcCSEtcnBohNOo6SuqCjePmu4fOqPYOp70rhpbzd+KBYJPclQCsSX3iBc/Qe3s8LITKixOy1gZCGwg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.7.9/angular-sanitize.min.js" integrity="sha512-eY2WqVT7O50HLSp/1/tZOUWYlAcPUl+WH3wu5NynvKNV5l/sKowxffGe1I91y3AuMvpyVvevOBOA3LEOBaemTw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/account.js"></script>
+
+    <title>Poly Learning </title>
+
+</head>
+
+<body ng-app="myapp">
+
+    <!-- NAVBAR
+    ================================================== -->
+    <header class="navbar navbar-expand-xl navbar-light bg-white border-bottom border-xl-0 py-2 py-xl-4">
+        <div class="container-fluid">
+
+            <!-- Brand -->
+            <a class="navbar-brand me-0 text-uppercase" href="#/!">
+                <img src="assets/img/images-removebg-preview.png" width="110px" alt="">
+                Poly Learning
+                <!-- <img src="assets/img/brand.svg" class="navbar-brand-img" alt="..."> -->
+            </a>
+
+            <!-- Vertical Menu -->
+            <ul class="navbar-nav navbar-vertical ms-xl-4 d-none d-xl-flex">
+                <li class="nav-item dropdown">
+                    <a class="nav-link pb-4 mb-n4 px-0 pt-0" id="navbarVerticalMenu" data-bs-toggle="dropdown" href="#"
+                        aria-haspopup="true" aria-expanded="false">
+                        <div class="bg-primary rounded py-3 px-5 d-flex align-items-center">
+                            <div class="me-3 ms-1 d-flex text-white">
+                                <!-- Icon -->
+                                <svg width="25" height="17" viewBox="0 0 25 17" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="25" height="1" fill="currentColor" />
+                                    <rect y="8" width="15" height="1" fill="currentColor" />
+                                    <rect y="16" width="20" height="1" fill="currentColor" />
+                                </svg>
+
+                            </div>
+                            <span class="text-white fw-medium me-1">Danh mục</span>
+                        </div>
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-md bg-primary rounded py-4 mt-4"
+                        aria-labelledby="navbarVerticalMenu">
+                        <li class="dropdown-item dropright">
+                            <a class="dropdown-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
+                                <div class="me-4 d-flex text-white icon-xs">
+                                    <!-- Icon -->
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.5247 5.64759C10.3104 5.21736 9.6919 5.21322 9.47557 5.64759L5.37401 13.8898C5.28096 14.0767 5.29443 14.299 5.4094 14.4734L7.65635 17.8813V20.0493C7.65635 20.3729 7.91869 20.6352 8.24229 20.6352H11.7579C12.0815 20.6352 12.3439 20.3729 12.3439 20.0493V17.8813L14.5908 14.4734C14.7058 14.299 14.7192 14.0767 14.6262 13.8898L10.5247 5.64759ZM11.172 19.4633H8.82822V18.2915H11.172V19.4633ZM11.4424 17.1196H8.55779L6.57342 14.1099L9.41416 8.40131V14.1508C9.41416 14.4744 9.67651 14.7368 10.0001 14.7368C10.3237 14.7368 10.586 14.4744 10.586 14.1508V8.40131L13.4268 14.1099L11.4424 17.1196Z"
+                                            fill="currentColor" fill-opacity="0.6" />
+                                        <path
+                                            d="M18.2422 0.635132C17.4783 0.635132 16.827 1.12501 16.5852 1.80701H11.7578V1.22107C11.7578 0.897476 11.4955 0.635132 11.1719 0.635132H8.82812C8.50453 0.635132 8.24219 0.897476 8.24219 1.22107V1.80701H3.41484C3.17297 1.12501 2.52168 0.635132 1.75781 0.635132C0.788555 0.635132 0 1.42369 0 2.39294C0 3.3622 0.788555 4.15076 1.75781 4.15076C2.52168 4.15076 3.17297 3.66048 3.41484 2.97849H5.60676C2.87645 4.5465 1.17188 7.44322 1.17188 10.5961C1.17188 10.9197 1.43422 11.182 1.75781 11.182C2.08141 11.182 2.34375 10.9197 2.34375 10.5961C2.34375 7.06076 4.8359 3.98591 8.24219 3.18271V3.56482C8.24219 3.88841 8.50453 4.15076 8.82812 4.15076H11.1719C11.4955 4.15076 11.7578 3.88841 11.7578 3.56482V3.18267C15.1641 3.98591 17.6562 7.06076 17.6562 10.5961C17.6562 10.9197 17.9186 11.182 18.2422 11.182C18.5658 11.182 18.8281 10.9197 18.8281 10.5961C18.8281 7.44724 17.127 4.54884 14.3932 2.97888H16.5852C16.827 3.66087 17.4783 4.15076 18.2422 4.15076C19.2114 4.15076 20 3.3622 20 2.39294C20 1.42369 19.2114 0.635132 18.2422 0.635132ZM1.75781 2.97888C1.43473 2.97888 1.17188 2.71603 1.17188 2.39294C1.17188 2.06986 1.43473 1.80701 1.75781 1.80701C2.0809 1.80701 2.34375 2.06986 2.34375 2.39294C2.34375 2.71603 2.0809 2.97888 1.75781 2.97888ZM10.5859 2.97888H9.41406V1.80701H10.5859V2.97888ZM18.2422 2.97888C17.9191 2.97888 17.6562 2.71603 17.6562 2.39294C17.6562 2.06986 17.9191 1.80701 18.2422 1.80701C18.5653 1.80701 18.8281 2.06986 18.8281 2.39294C18.8281 2.71603 18.5653 2.97888 18.2422 2.97888Z"
+                                            fill="currentColor" />
+                                    </svg>
+
+                                </div>
+                                Lập trình Mobile
+                            </a>
+
+                            <div class="dropdown-menu ps-3 top-0 pe-0 py-0 shadow-none bg-transparent">
+                                <div class="dropdown-menu-md bg-primary rounded dropdown-menu-inner">
+                                    <a class="dropdown-item" href="">
+                                        Lập trình Android
+                                    </a>
+                                    <a class="dropdown-item" href="">
+                                        Lập trình IOS
+                                    </a>
+
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="dropdown-item dropright">
+                            <a class="dropdown-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
+                                <div class="me-4 d-flex text-white icon-xs">
+                                    <!-- Icon -->
+                                    <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17.6062 4.12238C17.6014 4.12723 17.5965 4.12723 17.5917 4.12723H13.8383V3.02017C13.8383 1.94709 12.9497 1.06824 11.8767 1.06824H7.86113C6.78806 1.07309 5.91891 1.94709 5.92377 3.02017V4.12723H2.41321C1.08279 4.12723 0 5.20031 0 6.53073C0 6.53558 0 6.54044 0 6.54529V8.56035C0 9.39065 0.388444 10.1481 1.06822 10.59V16.4943C1.07308 17.8393 2.16072 18.9269 3.50571 18.9318H16.4943C17.8393 18.9269 18.9269 17.8393 18.9318 16.4943V10.59C19.6116 10.1481 20 9.38579 20 8.56035V6.54529C20.0049 5.21487 18.9318 4.13209 17.6062 4.12238ZM6.89488 3.02017C6.89002 2.4812 7.32217 2.0442 7.86113 2.03935H11.8767C12.4205 2.0442 12.8623 2.47635 12.8672 3.02017V4.12723H6.89488V3.02017ZM17.9655 16.4992C17.9607 17.31 17.3052 17.9655 16.4992 17.9655H3.50571C2.69483 17.9607 2.03933 17.3052 2.03933 16.4992V10.993L6.29765 12.2943C8.71085 13.0372 11.294 13.0372 13.7121 12.2943L17.9655 10.993V16.4992ZM19.0435 6.54044V8.56035H19.0337C19.0386 9.13816 18.6987 9.66256 18.1743 9.89562C18.1695 9.89562 18.1695 9.90048 18.1646 9.90048C18.1209 9.9199 18.0723 9.93932 18.0286 9.95389H18.0238L13.4256 11.362C11.1969 12.0466 8.81767 12.0466 6.58898 11.362L1.98592 9.95389C1.94222 9.93932 1.89852 9.92476 1.85482 9.90533C1.85482 9.90533 1.85967 9.90533 1.85967 9.90048C1.32071 9.67227 0.975965 9.14301 0.980821 8.55549V6.54044C0.975965 5.74898 1.61204 5.09834 2.4035 5.08863C2.40835 5.08863 2.41321 5.08863 2.42292 5.08863H17.6014C18.3928 5.08378 19.0386 5.72471 19.0435 6.52102C19.0435 6.52587 19.0435 6.53073 19.0435 6.54044Z"
+                                            fill="currentColor" fill-opacity="0.6" />
+                                        <path
+                                            d="M13.3965 7.0939C13.076 6.77829 12.6439 6.59863 12.1923 6.60349H7.81258C6.87545 6.60349 6.11313 7.36095 6.10828 8.30293C6.10828 8.7545 6.28793 9.18664 6.60354 9.50225C6.60354 9.50225 6.6084 9.50225 6.6084 9.50711C6.92887 9.82272 7.36101 10.0024 7.81258 10.0024H12.1923C13.1343 10.0024 13.8966 9.24005 13.8917 8.29807C13.8917 7.84651 13.7169 7.41922 13.3965 7.0939ZM12.1923 9.03126H7.81258C7.40956 9.03126 7.08424 8.70594 7.08424 8.30293C7.08424 7.89992 7.40956 7.5746 7.81258 7.5746H12.1923C12.5953 7.5746 12.9206 7.89992 12.9206 8.30293C12.9206 8.70594 12.5953 9.03126 12.1923 9.03126Z"
+                                            fill="currentColor" />
+                                    </svg>
+
+                                </div>
+                                Lập trình Website
+                            </a>
+
+                            <div class="dropdown-menu ps-3 top-0 pe-0 py-0 shadow-none bg-transparent">
+                                <div class="dropdown-menu-md bg-primary rounded dropdown-menu-inner">
+                                    <a class="dropdown-item" href="">
+                                        Lập trình Backend
+                                    </a>
+                                    <a class="dropdown-item" href="">
+                                        Lập trình FrontEnd
+                                    </a>
+
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="dropdown-item dropright">
+                            <a class="dropdown-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
+                                <div class="me-4 d-flex text-white icon-xs">
+                                    <!-- Icon -->
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M18.2422 0.0397949H1.75781C0.788555 0.0397949 0 0.82835 0 1.79761V18.2039C0 19.1731 0.788555 19.9617 1.75781 19.9617H18.2422C19.2114 19.9617 20 19.1731 20 18.2039V1.79761C20 0.82835 19.2114 0.0397949 18.2422 0.0397949ZM1.75781 1.21167H18.2422C18.5653 1.21167 18.8281 1.47452 18.8281 1.79761V4.72729H1.17188V1.79761C1.17188 1.47452 1.43473 1.21167 1.75781 1.21167ZM18.2422 18.7898H1.75781C1.43473 18.7898 1.17188 18.5269 1.17188 18.2039V5.89917H18.8281V18.2039C18.8281 18.5269 18.5653 18.7898 18.2422 18.7898Z"
+                                            fill="currentColor" />
+                                        <path
+                                            d="M11.9887 7.70365C11.6912 7.57619 11.3468 7.71396 11.2193 8.01138L7.70367 16.2145C7.57616 16.5119 7.71398 16.8564 8.0114 16.9839C8.30894 17.1114 8.65335 16.9735 8.78078 16.6761L12.2964 8.47302C12.4239 8.17556 12.2861 7.83111 11.9887 7.70365Z"
+                                            fill="currentColor" />
+                                        <path
+                                            d="M6.94201 9.63397C6.73982 9.38128 6.37103 9.34034 6.11845 9.54249L3.18876 11.8862C2.89583 12.1205 2.89564 12.5669 3.18876 12.8013L6.11845 15.1451C6.37115 15.3473 6.73994 15.3062 6.94201 15.0536C7.14416 14.8009 7.10322 14.4321 6.85048 14.23L4.49275 12.3438L6.85048 10.4576C7.10322 10.2554 7.14416 9.88671 6.94201 9.63397Z"
+                                            fill="currentColor" />
+                                        <path
+                                            d="M16.8114 11.8863L13.8817 9.54251C13.629 9.34032 13.2602 9.38129 13.0581 9.63399C12.856 9.88668 12.8969 10.2554 13.1496 10.4575L15.5074 12.3438L13.1496 14.23C12.8969 14.4321 12.856 14.8009 13.0581 15.0536C13.2605 15.3065 13.6293 15.347 13.8817 15.145L16.8114 12.8013C17.1043 12.567 17.1045 12.1207 16.8114 11.8863Z"
+                                            fill="currentColor" />
+                                        <path
+                                            d="M2.96875 3.55469C3.29235 3.55469 3.55469 3.29235 3.55469 2.96875C3.55469 2.64515 3.29235 2.38281 2.96875 2.38281C2.64515 2.38281 2.38281 2.64515 2.38281 2.96875C2.38281 3.29235 2.64515 3.55469 2.96875 3.55469Z"
+                                            fill="currentColor" />
+                                        <path
+                                            d="M5.3125 3.55469C5.6361 3.55469 5.89844 3.29235 5.89844 2.96875C5.89844 2.64515 5.6361 2.38281 5.3125 2.38281C4.9889 2.38281 4.72656 2.64515 4.72656 2.96875C4.72656 3.29235 4.9889 3.55469 5.3125 3.55469Z"
+                                            fill="currentColor" />
+                                        <path
+                                            d="M7.65625 3.55469C7.97985 3.55469 8.24219 3.29235 8.24219 2.96875C8.24219 2.64515 7.97985 2.38281 7.65625 2.38281C7.33265 2.38281 7.07031 2.64515 7.07031 2.96875C7.07031 3.29235 7.33265 3.55469 7.65625 3.55469Z"
+                                            fill="currentColor" />
+                                        <path
+                                            d="M13.5156 3.55469H17.0312C17.3548 3.55469 17.6172 3.29234 17.6172 2.96875C17.6172 2.64516 17.3548 2.38281 17.0312 2.38281H13.5156C13.192 2.38281 12.9297 2.64516 12.9297 2.96875C12.9297 3.29234 13.192 3.55469 13.5156 3.55469Z"
+                                            fill="currentColor" />
+                                    </svg>
+
+                                </div>
+                                Lập trình ứng dụng
+                            </a>
+
+                            <div class="dropdown-menu ps-3 top-0 pe-0 py-0 shadow-none bg-transparent">
+                                <div class="dropdown-menu-md bg-primary rounded dropdown-menu-inner">
+                                    <a class="dropdown-item" href="">
+                                        Lập trình Java
+                                    </a>
+                                    <a class="dropdown-item" href="">
+                                        Lập trình C#
+                                    </a>
+
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="dropdown-item dropright">
+                            <a class="dropdown-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
+                                <div class="me-4 d-flex text-white icon-xs">
+                                    <!-- Icon -->
+                                    <svg width="14" height="18" viewBox="0 0 14 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.5717 0H4.16956C4.05379 0.00594643 3.94322 0.0496071 3.85456 0.124286L0.413131 3.57857C0.328167 3.65957 0.280113 3.77191 0.280274 3.88929V16.8514C0.281452 17.4853 0.794988 17.9988 1.42885 18H12.5717C13.1981 17.9989 13.7086 17.497 13.7203 16.8707V1.14857C13.7191 0.514714 13.2056 0.00117857 12.5717 0ZM8.18099 0.857143H10.6988V4.87714L9.80527 3.45214C9.76906 3.39182 9.71859 3.3413 9.65827 3.30514C9.45529 3.18337 9.19204 3.24916 9.07027 3.45214L8.18099 4.87071V0.857143ZM3.7367 1.46786V2.66143C3.73552 3.10002 3.38029 3.45525 2.9417 3.45643H1.74813L3.7367 1.46786ZM12.8546 16.86C12.8534 17.0157 12.7274 17.1417 12.5717 17.1429H1.42885C1.42665 17.1429 1.42445 17.143 1.42226 17.143C1.26486 17.1441 1.13635 17.0174 1.13527 16.86V4.32214H2.9417C3.85793 4.31979 4.60006 3.57766 4.60242 2.66143V0.857143H7.31527V5.23286C7.31345 5.42593 7.37688 5.61391 7.49527 5.76643C7.67533 5.99539 7.98036 6.08561 8.25599 5.99143L8.28813 5.98071C8.49272 5.89484 8.66356 5.7443 8.77456 5.55214L9.44099 4.48071L10.1074 5.55214C10.2184 5.7443 10.3893 5.89484 10.5938 5.98071C10.8764 6.0922 11.1987 6.00509 11.3867 5.76643C11.5051 5.61391 11.5685 5.42593 11.5667 5.23286V0.857143H12.5717C12.7266 0.858268 12.8523 0.982982 12.8546 1.13786V16.86Z"
+                                            fill="currentColor" />
+                                        <path
+                                            d="M10.7761 14.3143H3.22252C2.98584 14.3143 2.79395 14.5062 2.79395 14.7429C2.79395 14.9796 2.98584 15.1715 3.22252 15.1715H10.7761C11.0128 15.1715 11.2047 14.9796 11.2047 14.7429C11.2047 14.5062 11.0128 14.3143 10.7761 14.3143Z"
+                                            fill="currentColor" />
+                                        <path
+                                            d="M10.7761 12.2035H3.22252C2.98584 12.2035 2.79395 12.3954 2.79395 12.6321C2.79395 12.8687 2.98584 13.0606 3.22252 13.0606H10.7761C11.0128 13.0606 11.2047 12.8687 11.2047 12.6321C11.2047 12.3954 11.0128 12.2035 10.7761 12.2035Z"
+                                            fill="currentColor" />
+                                        <path
+                                            d="M10.7761 10.0928H3.22252C2.98584 10.0928 2.79395 10.2847 2.79395 10.5213C2.79395 10.758 2.98584 10.9499 3.22252 10.9499H10.7761C11.0128 10.9499 11.2047 10.758 11.2047 10.5213C11.2047 10.2847 11.0128 10.0928 10.7761 10.0928Z"
+                                            fill="currentColor" />
+                                        <path
+                                            d="M10.7761 7.98218H3.22252C2.98584 7.98218 2.79395 8.17407 2.79395 8.41075C2.79395 8.64743 2.98584 8.83932 3.22252 8.83932H10.7761C11.0128 8.83932 11.2047 8.64743 11.2047 8.41075C11.2047 8.17407 11.0128 7.98218 10.7761 7.98218Z"
+                                            fill="currentColor" />
+                                    </svg>
+
+                                </div>
+                                Thiết kế đồ hoạ
+                            </a>
+
+                        </li>
+
+
+                    </ul>
+                </li>
+            </ul>
+
+
+
+            <!-- Collapse -->
+            <div class="collapse navbar-collapse z-index-lg" id="navbarCollapse">
+
+                <!-- Toggler -->
+                <button class="navbar-toggler outline-0 text-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <!-- Icon -->
+                    <svg width="16" height="17" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.142135 2.00015L1.55635 0.585938L15.6985 14.7281L14.2843 16.1423L0.142135 2.00015Z"
+                            fill="currentColor"></path>
+                        <path d="M14.1421 1.0001L15.5563 2.41431L1.41421 16.5564L0 15.1422L14.1421 1.0001Z"
+                            fill="currentColor"></path>
+                    </svg>
+
+                </button>
+
+                <!-- Navigation -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown dropdown-full-width">
+                        <a class="nav-link dropdown-toggle"  href="#/!"
+                           >
+                            Trang chủ
+                        </a>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" 
+                            href="#!subjects" >
+                            Môn học
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item ">
+                        <a class="nav-link " href="#!about">
+                            Giới thiệu
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="#!contact"
+                            >
+                            Liên hệ
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="#!qa"
+                            >
+                            Hỏi đáp
+                        </a>
+
+                    </li>
+                   <li class="nav-item dropdown" ng-controller="accountController">
+                       <a class="nav-link dropdown-toggle"id="triggerId"  data-toggle="dropdown" aria-haspopup="true"
+                               aria-expanded="false">
+                                Tài khoản
+                               </a>
+                       <div class="dropdown-menu" id="account"  aria-labelledby="triggerId">
+                           <div  ng-bind-html="accountv"></div>
+                       </div>
+                   </li>
+
+                </ul>
+            </div>
+
+           
+
+           
+        </div>
+    </header>
+    <div ng-view></div>
+
+      <!-- JAVASCRIPT
+================================================== -->
+
+    <!-- FOOTER
+    ================================================== -->
+    <footer class="pt-8 pt-md-11 bg-white">
+        <div class="container">
+            <div class="row" id="accordionFooter">
+                <div class="col-12 col-md-4 col-lg-6">
+
+                    <!-- Brand -->
+                    <img src="assets/img/images-removebg-preview.png" width="110px" alt="">
+                    <b class="text-uppercase">Poly Learning</b>
+
+                    <!-- Text -->
+                    <p class="text-gray-800 mb-4 font-size-sm-alone">
+                        137 Nguyễn Thị Thập - Hoà Minh - Liên Chiễu - Đà Nẵng.
+                    </p>
+
+                    <div class="mb-4">
+                        <a href="tel:1234567890" class="text-gray-800 font-size-sm-alone">123 456 7890</a>
+                    </div>
+
+                    <div class="mb-4">
+                        <a href="mailto:support@skola.com"
+                            class="text-gray-800 font-size-sm-alone">polylearning.contact@gmail.com</a>
+                    </div>
+
+                    <!-- Social -->
+                    <ul class="list-unstyled list-inline list-social mb-4 mb-md-0">
+                        <li class="list-inline-item list-social-item">
+                            <a href="#"
+                                class="text-secondary font-size-sm w-36 h-36 shadow-dark-hover d-flex align-items-center justify-content-center rounded-circle border-hover">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item list-social-item">
+                            <a href="#"
+                                class="text-secondary font-size-sm w-36 h-36 shadow-dark-hover d-flex align-items-center justify-content-center rounded-circle border-hover">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item list-social-item">
+                            <a href="#"
+                                class="text-secondary font-size-sm w-36 h-36 shadow-dark-hover d-flex align-items-center justify-content-center rounded-circle border-hover">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item list-social-item">
+                            <a href="#"
+                                class="text-secondary font-size-sm w-36 h-36 shadow-dark-hover d-flex align-items-center justify-content-center rounded-circle border-hover">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-2">
+                    <div class="mb-5 mb-xl-0 footer-accordion">
+
+                        <!-- Heading -->
+                        <div id="widgetOne">
+                            <h5 class="mb-5">
+                                <button class="text-dark fw-medium footer-accordion-toggle d-flex align-items-center"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#widgetcollapseOne"
+                                    aria-expanded="true" aria-controls="widgetcollapseOne">
+                                    Về chúng tôi
+                                    <span class="ms-auto text-dark">
+                                        <!-- Icon -->
+                                        <svg width="15" height="2" viewBox="0 0 15 2" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="15" height="2" fill="currentColor" />
+                                        </svg>
+
+                                        <svg width="15" height="16" viewBox="0 0 15 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 7H15V9H0V7Z" fill="currentColor" />
+                                            <path d="M6 16L6 8.74228e-08L8 0L8 16H6Z" fill="currentColor" />
+                                        </svg>
+
+                                    </span>
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="widgetcollapseOne" class="collapse show" aria-labelledby="widgetOne"
+                            data-parent="#accordionFooter">
+                            <!-- List -->
+                            <ul class="list-unstyled text-gray-800 font-size-sm-alone mb-6 mb-md-8 mb-lg-0">
+
+                                <li class="mb-3">
+                                    <a href="#!about" class="text-reset">
+                                        Giới thiệu
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="#!contact" class="text-reset">
+                                        Liên hệ
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="#!qa" class="text-reset">
+                                        Hỏi đáp
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="#" class="text-reset">
+                                        Điều khoản
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-2">
+                    <div class="mb-5 mb-xl-0 ms-xl-6 footer-accordion">
+
+                        <!-- Heading -->
+                        <div id="widgetTwo">
+                            <h5 class="mb-5">
+                                <button class="text-dark fw-medium footer-accordion-toggle d-flex align-items-center"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#widgetcollapseTwo"
+                                    aria-expanded="false" aria-controls="widgetcollapseTwo">
+                                    Môn học
+                                    <span class="ms-auto text-dark">
+                                        <!-- Icon -->
+                                        <svg width="15" height="2" viewBox="0 0 15 2" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="15" height="2" fill="currentColor" />
+                                        </svg>
+
+                                        <svg width="15" height="16" viewBox="0 0 15 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 7H15V9H0V7Z" fill="currentColor" />
+                                            <path d="M6 16L6 8.74228e-08L8 0L8 16H6Z" fill="currentColor" />
+                                        </svg>
+
+                                    </span>
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="widgetcollapseTwo" class="collapse" aria-labelledby="widgetTwo"
+                            data-parent="#accordionFooter">
+                            <!-- List -->
+                            <ul class="list-unstyled text-gray-800 font-size-sm-alone mb-6 mb-md-8 mb-lg-0">
+                                <li class="mb-3">
+                                    <a href="course-list-v2.html" class="text-reset">
+                                        HTML
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="course-list-v2.html" class="text-reset">
+                                        CSS
+                                    </a>
+                                </li>
+
+                                <li class="mb-3">
+                                    <a href="course-list-v5.html" class="text-reset">
+                                        JavaScript
+                                    </a>
+                                </li>
+
+                                <li class="mb-3">
+                                    <a href="course-list-v1.html" class="text-reset">
+                                        PHP
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="course-list-v3.html" class="text-reset">
+                                        Android
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+                    <div class="mb-5 mb-xl-0 ms-xl-6 footer-accordion">
+
+                        <!-- Heading -->
+                        <div id="widgetThree">
+                            <h5 class="mb-5">
+                                <button class="text-dark fw-medium footer-accordion-toggle d-flex align-items-center"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#widgetcollapseThree"
+                                    aria-expanded="false" aria-controls="widgetcollapseThree">
+                                    Danh mục
+                                    <span class="ms-auto text-dark">
+                                        <!-- Icon -->
+                                        <svg width="15" height="2" viewBox="0 0 15 2" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="15" height="2" fill="currentColor" />
+                                        </svg>
+
+                                        <svg width="15" height="16" viewBox="0 0 15 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 7H15V9H0V7Z" fill="currentColor" />
+                                            <path d="M6 16L6 8.74228e-08L8 0L8 16H6Z" fill="currentColor" />
+                                        </svg>
+
+                                    </span>
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="widgetcollapseThree" class="collapse" aria-labelledby="widgetThree"
+                            data-parent="#accordionFooter">
+                            <!-- List -->
+                            <ul class="list-unstyled text-gray-800 font-size-sm-alone mb-0">
+                                <li class="mb-3">
+                                    <a href="lesson-single-v1.html" class="text-reset">
+                                        Lập trình web
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="lesson-single-v2.html" class="text-reset">
+                                        Lập trình android
+                                    </a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="lesson-single-v1.html" class="text-reset">
+                                        Lập trình mobile
+                                    </a>
+                                </li>
+
+                                <li class="mb-3">
+                                    <a href="lesson-single-v1.html" class="text-reset">
+                                        Lập trình ứng dụng
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-12 mt-md-5">
+                    <div
+                        class="border-top pb-5 pt-6 py-md-4 text-center text-xl-start d-flex flex-column d-md-block d-xl-flex flex-xl-row align-items-center">
+                        <p
+                            class="text-gray-800 font-size-sm-alone d-block mb-0 mb-md-2 mb-xl-0 order-1 order-md-0 px-9 px-md-0">
+                            Copyright © 2022 Poly Learning.</p>
+
+                    </div>
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </footer>
+
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Libs JS -->
+    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/aos/dist/aos.js"></script>
+    <script src="assets/libs/countup.js/dist/countUp.min.js"></script>
+    <script src="assets/libs/flickity-fade/flickity-fade.js"></script>
+    <script src="assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/libs/jarallax/dist/jarallax-video.min.js"></script>
+    <script src="assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Map -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/fontawesome.min.js" integrity="sha512-5qbIAL4qJ/FSsWfIq5Pd0qbqoZpk5NcUVeAAREV2Li4EKzyJDEGlADHhHOSSCw0tHP7z3Q4hNHJXa81P92borQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Theme JS -->
+    <script src="assets/js/theme.min.js"></script>
+
+</body>
+
+
+</html>
