@@ -24374,6 +24374,7 @@ form.woocommerce-checkout .form-row .input-text {
   right: 0;
   bottom: 0;
   padding-bottom: calc(0.62 * 100%);
+  
 }
 .sk-thumbnail img {
   height: auto;
@@ -24383,7 +24384,7 @@ form.woocommerce-checkout .form-row .input-text {
   -webkit-transform: scale(1.01) translate(-50%, -50%);
   transform: scale(1.01) translate(-50%, -50%);
   display: block;
-  width: 100%;
+  width: 50%;
   max-height: none;
   max-width: none;
   -webkit-transition: -webkit-filter 0.3s;
@@ -35115,4 +35116,7 @@ body.compensate-for-scrollbar {
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: color-dodge;
+}
+a {
+  cursor: pointer !important;
 }

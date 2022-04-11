@@ -1,54 +1,68 @@
- <!-- PAGE TITLE
+<!-- PAGE TITLE
     ================================================== -->
-    <header class="py-8 py-md-11" style="background-image: none;">
-        <div class="container text-center py-xl-2">
-            <h1 class="display-4 fw-semi-bold mb-0">Recover Password</h1>
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb breadcrumb-scroll justify-content-center">
-                    <li class="breadcrumb-item">
-                        <a class="text-gray-800" href="#">
-                            Home
-                        </a>
-                    </li>
-                    <li class="breadcrumb-item text-gray-800 active" aria-current="page">
-                        Recover Password
-                    </li>
-                </ol>
-            </nav>
-        </div>
-        <!-- Img -->
-        <img class="d-none img-fluid" src="...html" alt="...">
-    </header>
+<header class="py-8 py-md-11" style="background-image: none;">
+    <div class="container text-center py-xl-2">
+        <h1 class="display-4 fw-semi-bold mb-0">Đổi mật khẩu</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb-scroll justify-content-center">
+                <li class="breadcrumb-item">
+                    <a class="text-gray-800" href="#">
+                        Home
+                    </a>
+                </li>
+                <li class="breadcrumb-item text-gray-800 active" aria-current="page">
+                    Đổi mật khẩu
+                </li>
+            </ol>
+        </nav>
+    </div>
+    <!-- Img -->
+    <img class="d-none img-fluid" src="...html" alt="...">
+</header>
 
 
-    <!-- RECOVER
+<!-- RECOVER
     ================================================== -->
-    <div class="container mb-11">
-        <div class="row gx-0">
-            <div class="col-md-7 col-xl-4 mx-auto">
-                <!-- Recover -->
-                <h3 class="mb-6">Recover password!</h3>
+<div class="container mb-11">
+    <div class="row gx-0">
+        <div class="col-md-7 col-xl-4 mx-auto">
+            <!-- Recover -->
 
-                <!-- Form Recover Password -->
-                <form class="mb-5">
-                    <!-- Email -->
-                    <div class="form-group">
-                        <label for="modalForgotpasswordEmail1">
-                            Email
-                        </label>
-                        <input type="email" class="form-control" id="modalForgotpasswordEmail1" placeholder="johndoe@creativelayers.com">
-                    </div>
+            <!-- Form Recover Password -->
+            <form class="mb-5" name="formRecover">
+                <!-- Email -->
+                <div class="form-group">
+                    <h3 class="mb-1">Nhập mật khẩu cũ</h3>
 
-                    <!-- Submit -->
-                    <button class="btn btn-block btn-primary" type="submit">
-                        RECOVER PASSWORD
-                    </button>
-                </form>
 
-                <!-- Text -->
-                <p class="mb-0 font-size-sm text-center">
-                    Remember your password? <a class="text-underline" href="login.html">Log In</a>
-                </p>
-            </div>
+                    <input type="password" name="passOld" class="form-control py-3" check-pass  ng-model="passOld" id="modalForgotpasswordEmail1"
+                        placeholder="">
+                        <small class="text-danger" ng-hide="formRecover.passOld.$valid">Vui lòng nhập đúng mật khẩu cũ</small>
+                </div>
+                  <!-- Email -->
+                  <div class="form-group">
+                    <h3 class="mb-1">Nhập mật khẩu mới</h3>
+                   
+                    <input type="password" name="passNew" class="form-control py-3" required ng-model="passNew" id="modalForgotpasswordEmail1"
+                        placeholder="">
+                        <small class="text-danger" ng-hide="formRecover.passNew.$valid">Vui lòng nhập mật khẩu mới</small>
+
+                </div>
+
+                <!-- Submit -->
+                   <!-- Submit -->
+                   <button ng-show="formRecover.$invalid" class="btn btn-block btn-primary mt-3" type="submit">
+                    Cập nhật
+                </button>
+                <button ng-show="formRecover.$valid" class="btn btn-block btn-primary mt-3" ng-click="recoverPass()" type="submit">
+                    Cập nhật
+                </button>
+            </form>
+
+            <!-- Text -->
+            <p class="mb-0 font-size-sm text-center">
+               Bạn nhớ mật khẩu? <a class="text-underline" href="#!login">Đăng nhập</a>
+            </p>
         </div>
     </div>
+</div>

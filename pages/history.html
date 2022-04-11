@@ -1,0 +1,27 @@
+    <div class="container my-5 ">
+        <div class="card">
+            <div class="card-header">
+               <h3> Lịch sử làm Quiz</h3>
+            </div>
+            <div class="card-body">
+                <table style="background-color: white;" class="table  table-bordered">
+                    <thead>
+                        <tr >
+                            <th >ID</th>
+                            <th>Môn học</th>
+                            <th>Điểm</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="quizHistory in quizsHistory">
+                            <td scope="row">{{quizHistory.idSubject}}</td>
+                            <td><a href="#!quiz/{{quizHistory.idSubject}}/{{quizHistory.name}}/{{quizHistory.img}}">{{quizHistory.name}}</a></td>
+                            <td>{{quizHistory.score}}</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+      
+    </div>
